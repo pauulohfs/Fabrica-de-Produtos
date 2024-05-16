@@ -1,0 +1,10 @@
+Madeira 30000
+Aco 50000
+Ferro 40000
+Aluminio 150000
+Chumbo 1555
+Cobre 5000
+Ouro 700
+Prata 900
+Couro 300
+Pedra 800000
