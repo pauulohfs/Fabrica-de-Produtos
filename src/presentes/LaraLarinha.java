@@ -29,8 +29,7 @@ public class LaraLarinha extends Manofatura {
         insumosUsados.adicionarItem(couro);
         insumosUsados.adicionarItem(pedra);
         try {
-            boolean validador = estoque.decrementar(insumosUsados);
-            if (validador == true) {
+            if (estoque.decrementar(insumosUsados)) {
                 Presentes novoPresente = new LaraLarinha(this.getNome(), this.getIdade(), this.getPeso(), this.getCodigo(), this.getProdutor());
                 for (Produtor produtor : listaProdutores) {
                     if (produtor.getNomeprodutor().equals(this.getProdutor().getNomeprodutor())) {

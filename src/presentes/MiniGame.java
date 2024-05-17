@@ -25,8 +25,7 @@ public class MiniGame extends Eletronicos {
         insumosUsados.adicionarItem(aluminio);
         insumosUsados.adicionarItem(chumbo);
         try {
-            boolean validador = estoque.decrementar(insumosUsados);
-            if (validador == true) {
+            if (estoque.decrementar(insumosUsados)) {
                 Presentes novoPresente = new MiniGame(this.getNome(), this.getIdade(), this.getPeso(), this.getCodigo(), this.getConsumo());
                 Presentes.totalpresentes++;
                 novoPresente.setSerial(Presentes.totalpresentes);

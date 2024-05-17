@@ -29,8 +29,7 @@ public class RoboX extends Eletronicos {
         insumosUsados.adicionarItem(couro);
         insumosUsados.adicionarItem(pedra);
         try {
-            boolean validador = estoque.decrementar(insumosUsados);
-            if (validador == true) {
+            if (estoque.decrementar(insumosUsados)) {
                 Presentes novoPresente = new RoboX(this.getNome(), this.getIdade(), this.getPeso(), this.getCodigo(), this.getConsumo());
                 Presentes.totalpresentes++;
                 novoPresente.setSerial(Presentes.totalpresentes);

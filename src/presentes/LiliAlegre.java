@@ -20,9 +20,8 @@ public class LiliAlegre extends Manofatura {
         insumosUsados.adicionarItem(ouro);
         insumosUsados.adicionarItem(prata);
         insumosUsados.adicionarItem(couro);
-        try {
-            boolean validador = estoque.decrementar(insumosUsados);
-            if (validador == true) {
+        try {         
+            if (estoque.decrementar(insumosUsados)) {
                 Presentes novoPresente = new LiliAlegre(this.getNome(), this.getIdade(), this.getPeso(), this.getCodigo(), this.getProdutor());
                 for (Produtor produtor : listaProdutores) {
                     if (produtor.getNomeprodutor().equals(this.getProdutor().getNomeprodutor())) {
